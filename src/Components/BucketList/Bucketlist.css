@@ -1,0 +1,42 @@
+.container {
+    width: 183px;
+    height: 199px;
+    position: relative;
+}
+
+.dashed-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 1px; /* Adjust the height as needed */
+    background-color: white;
+    transform: translate(-50%, -50%);
+    border-radius: 5px; /* Optional: Add rounded corners for a better appearance */
+    /* Add any other styles for the dashed line */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-arrow,
+.bottom-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.top-arrow {
+    border-width: 5px 5px 0 5px;
+    border-color: transparent transparent transparent white;
+    transform: rotate(180deg);
+}
+
+.bottom-arrow {
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent white transparent;
+}
