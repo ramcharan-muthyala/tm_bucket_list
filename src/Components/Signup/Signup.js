@@ -25,17 +25,7 @@ const Signup = (lo) => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth <= 768);
-  //   };
 
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
 
   const loginurl = "http://127.0.0.1:5000/auth/login";
   const signupurl = "http://127.0.0.1:5000/auth/register";
